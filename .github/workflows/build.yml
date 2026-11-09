@@ -189,7 +189,7 @@ jobs:
     env:
       BUILD_NUMBER: ${{ needs.build-number.outputs.BUILD_NUMBER }}
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         include:
           - name: SonarCloudEU
